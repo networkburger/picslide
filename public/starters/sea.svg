@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fd0f0"/><stop offset="1" stop-color="#1667c9"/></linearGradient>
+    <g id="fish"><ellipse cx="0" cy="0" rx="80" ry="50"/><polygon points="-70,0 -130,-45 -130,45"/><circle cx="45" cy="-12" r="13" fill="#fff"/><circle cx="49" cy="-12" r="7" fill="#222"/></g>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#water)"/>
+  <g fill="#fff" opacity="0.18"><polygon points="120,0 220,0 60,700 0,700"/><polygon points="480,0 560,0 420,600 360,600"/><polygon points="800,0 900,0 760,650 680,650"/></g>
+  <path d="M0 860 Q 200 800 420 850 T 1024 830 V1024 H0Z" fill="#f6d58a"/>
+  <path d="M0 920 Q 260 880 520 920 T 1024 910 V1024 H0Z" fill="#eec26a"/>
+  <!-- seaweed -->
+  <g fill="none" stroke-width="28" stroke-linecap="round">
+    <path d="M90 880 Q 50 780 100 700 T 90 520" stroke="#2fb35a"/>
+    <path d="M150 890 Q 190 800 140 720 T 170 600" stroke="#46d06f"/>
+    <path d="M900 870 Q 860 760 920 680 T 890 500" stroke="#2fb35a"/>
+    <path d="M960 880 Q 1000 800 950 720" stroke="#46d06f"/>
+  </g>
+  <!-- coral -->
+  <g fill="#ff6fa8"><rect x="520" y="740" width="30" height="130" rx="15"/><rect x="470" y="770" width="26" height="90" rx="13" transform="rotate(-25 483 860)"/><rect x="580" y="760" width="26" height="100" rx="13" transform="rotate(25 593 860)"/></g>
+  <use href="#fish" x="300" y="250" fill="#ff8c1a"/>
+  <g transform="translate(720 400) scale(-1 1)"><use href="#fish" fill="#ffd12e"/></g>
+  <g transform="translate(380 560) scale(0.8)"><use href="#fish" fill="#b26bff"/></g>
+  <g transform="translate(760 180) scale(-0.6 0.6)"><use href="#fish" fill="#ff4d6d"/></g>
+  <!-- stripes on orange fish -->
+  <g fill="#fff"><rect x="285" y="205" width="16" height="90" rx="8"/><rect x="240" y="215" width="14" height="70" rx="7"/></g>
+  <!-- starfish -->
+  <polygon transform="translate(300 930) scale(1.1)" fill="#ff5a3c" points="0,-60 16,-20 58,-18 24,8 36,50 0,26 -36,50 -24,8 -58,-18 -16,-20"/>
+  <!-- crab -->
+  <g transform="translate(740 900)">
+    <ellipse cx="0" cy="0" rx="70" ry="42" fill="#e8402a"/>
+    <circle cx="-75" cy="-45" r="26" fill="#e8402a"/><circle cx="75" cy="-45" r="26" fill="#e8402a"/>
+    <line x1="-20" y1="-35" x2="-25" y2="-70" stroke="#e8402a" stroke-width="8"/><line x1="20" y1="-35" x2="25" y2="-70" stroke="#e8402a" stroke-width="8"/>
+    <circle cx="-25" cy="-75" r="12" fill="#fff"/><circle cx="25" cy="-75" r="12" fill="#fff"/><circle cx="-25" cy="-75" r="6" fill="#222"/><circle cx="25" cy="-75" r="6" fill="#222"/>
+  </g>
+  <!-- bubbles -->
+  <g fill="none" stroke="#e8fbff" stroke-width="6" opacity="0.85">
+    <circle cx="420" cy="190" r="16"/><circle cx="445" cy="140" r="11"/><circle cx="430" cy="100" r="7"/>
+    <circle cx="560" cy="420" r="14"/><circle cx="580" cy="370" r="9"/>
+    <circle cx="880" cy="320" r="12"/><circle cx="860" cy="270" r="8"/>
+    <circle cx="160" cy="450" r="18"/><circle cx="180" cy="390" r="10"/>
+  </g>
+</svg>
