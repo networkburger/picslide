@@ -1,0 +1,22 @@
+{
+  "name": "pictureslide",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "android": "adb reverse tcp:5173 tcp:5173 && vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "icons": "bash scripts/icons.sh"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/fredoka": "^5.3.0"
+  }
+}

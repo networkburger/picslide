@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="0.3" cy="0.3" r="1"><stop offset="0" stop-color="#4b2a8f"/><stop offset="1" stop-color="#140b33"/></radialGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.35" r="0.7"><stop offset="0" stop-color="#ffb36b"/><stop offset="1" stop-color="#e2582c"/></radialGradient>
+    <radialGradient id="earth" cx="0.35" cy="0.35" r="0.7"><stop offset="0" stop-color="#6fd4ff"/><stop offset="1" stop-color="#1d6fd1"/></radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g fill="#fff">
+    <circle cx="80" cy="90" r="5"/><circle cx="240" cy="60" r="3"/><circle cx="420" cy="120" r="4"/><circle cx="610" cy="70" r="3"/><circle cx="960" cy="110" r="5"/>
+    <circle cx="140" cy="300" r="3"/><circle cx="480" cy="330" r="4"/><circle cx="900" cy="420" r="3"/><circle cx="60" cy="560" r="4"/><circle cx="350" cy="620" r="3"/>
+    <circle cx="560" cy="560" r="3"/><circle cx="980" cy="660" r="4"/><circle cx="120" cy="860" r="3"/><circle cx="460" cy="960" r="5"/><circle cx="700" cy="980" r="3"/>
+  </g>
+  <g fill="#ffe66b">
+    <polygon transform="translate(330 220) scale(0.8)" points="0,-40 10,-10 40,0 10,10 0,40 -10,10 -40,0 -10,-10"/>
+    <polygon transform="translate(880 560) scale(0.6)" points="0,-40 10,-10 40,0 10,10 0,40 -10,10 -40,0 -10,-10"/>
+    <polygon transform="translate(220 700) scale(0.7)" points="0,-40 10,-10 40,0 10,10 0,40 -10,10 -40,0 -10,-10"/>
+  </g>
+  <!-- ringed planet -->
+  <ellipse cx="760" cy="250" rx="220" ry="50" fill="none" stroke="#ffd98a" stroke-width="22" transform="rotate(-18 760 250)"/>
+  <circle cx="760" cy="250" r="130" fill="url(#planet)"/>
+  <path d="M 560 300 A 220 50 -18 0 0 960 180" fill="none" stroke="#ffd98a" stroke-width="22" transform="rotate(0)"/>
+  <!-- moon -->
+  <circle cx="160" cy="180" r="90" fill="#e9e6f5"/><circle cx="130" cy="160" r="18" fill="#c9c3e0"/><circle cx="190" cy="215" r="24" fill="#c9c3e0"/><circle cx="185" cy="130" r="10" fill="#c9c3e0"/>
+  <!-- earth -->
+  <circle cx="820" cy="840" r="150" fill="url(#earth)"/>
+  <path d="M720 780 q40 -40 90 -10 q30 30 -10 60 q-50 20 -80 -10z M840 880 q50 -20 80 20 q-10 50 -60 50 q-40 -20 -20 -70z" fill="#4cd166"/>
+  <!-- rocket -->
+  <g transform="translate(430 560) rotate(30)">
+    <path d="M0 -230 C 70 -170 80 -60 70 60 L -70 60 C -80 -60 -70 -170 0 -230Z" fill="#f2f4ff"/>
+    <path d="M0 -230 C 40 -200 58 -160 64 -130 L -64 -130 C -58 -160 -40 -200 0 -230Z" fill="#ff4d6d"/>
+    <circle cx="0" cy="-60" r="38" fill="#3d7bff" stroke="#9fb3d9" stroke-width="12"/>
+    <path d="M-70 0 L -130 90 L -70 70Z M70 0 L 130 90 L 70 70Z" fill="#ff4d6d"/>
+    <path d="M-45 60 Q 0 220 45 60Z" fill="#ffc928"/>
+    <path d="M-25 60 Q 0 160 25 60Z" fill="#ff8c1a"/>
+  </g>
+</svg>
