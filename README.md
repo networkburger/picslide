@@ -8,6 +8,8 @@ scramble, then put it back together by **dragging** pieces or **tap-tap** swappi
 It's an installable web app (PWA): it runs in the browser, can be added to the home screen to open
 full-screen, and works offline once loaded.
 
+Public URL (once GitHub Pages is enabled): **https://networkburger.github.io/picslide/**.
+
 ## How it plays
 
 - **Gallery.** Built-in starter pictures plus any photos a grown-up adds with **Add photos**, which
@@ -33,6 +35,21 @@ npm run typecheck
 npm run build      # production build + service worker in dist/
 npm run preview    # serve the production build
 npm run icons      # rebuild PNG icons from public/icons/icon.svg (needs rsvg-convert + magick)
+```
+
+### GitHub Pages
+
+The `Deploy to GitHub Pages` workflow builds and publishes every push to `main`. It can also be
+run manually from the Actions tab. In the repository's **Settings → Pages**, set the source to
+**GitHub Actions**.
+
+The build uses the base path reported by GitHub Pages so scripts, starter pictures, icons and the
+service worker all stay under `/picslide/`. To preview that deployment locally:
+
+```bash
+npm run build -- --base /picslide/
+npm run preview -- --base /picslide/
+# Open http://localhost:4173/picslide/
 ```
 
 ### Testing on real devices
